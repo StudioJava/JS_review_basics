@@ -63,3 +63,17 @@ otherwise they're free to go.
     }
  }
 speedCheck(120);
+//Logical Operator
+if (payment != "card") {
+    console.log("Sell Beer")
+  }
+
+/* 
+Create a simple pool game (snooker), 
+where the ball that's going in the hole will score 1 point only if
+1. either the ball has a color
+2. or all other balls went through already
+*/
+function snookerGame(ballColor){
+if(ballColor != 'white' )
+}
