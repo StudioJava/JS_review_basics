@@ -74,6 +74,15 @@ where the ball that's going in the hole will score 1 point only if
 1. either the ball has a color
 2. or all other balls went through already
 */
-function snookerGame(ballColor){
-if(ballColor != 'white' )
+snookerGame = {
+whiteBall:{
+    color:'white',
+    number:7
+}
+}
+function snookerGame(ballColor,ballNumber){
+    var counter = 0;
+if(ballColor != 'white' || ballNumber !== 7 ){
+console.log('One Point' + counter++);
+}
 }
