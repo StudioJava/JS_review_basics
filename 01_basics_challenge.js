@@ -137,4 +137,18 @@ function scoreSum(array){
 
     }
 }
-console.log(scoreSum(score))
+console.log(scoreSum(score));
+/*
+Set the constants `city` and `color` to 
+your likings and the constant `birth` to your year of birth,
+then use them to log the following phrase as a string:
+
+Hello, I'm *name*, I come from *city*, my favourite color is *color* 
+and I'm *years* old. (Where *years* should be a calculated inline
+     based on your year of birth).
+*/
+const name = 'Teddy';
+const city = 'Moncton';
+const color = 'Red';
+const birth = 'February';
+console.log(`Hello, I'm ${name} I come from ${city} my favourite color is ${color} born in ${birth}`);
