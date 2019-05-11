@@ -118,3 +118,23 @@ for(item in cart){
     total += cart[item];
     console.log(total)
 }
+
+/*
+Create a bowling game where an array of scores for a single player
+ is passed to a function which returns the sum of all scores. However, 
+ if a score is 10 (strike), increase the total by 15 points.
+*/
+var score = [2,4,7,9,10,3,6,10];
+function scoreSum(array){
+    var total = 0;
+    for(item in array){
+        total = total +  array[item];
+        if(array[item] == 10){
+            total = total + 15;
+
+        }
+       console.log(total);
+
+    }
+}
+console.log(scoreSum(score))
