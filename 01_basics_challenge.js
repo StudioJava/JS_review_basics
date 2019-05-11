@@ -95,9 +95,26 @@ ball2:{
 // }
 function game(ballColor,number){
     if(ballColor != 'white' || number != 7){
-        console.log('Point');
+        console.log('You go a Point');
     }else{
         console.log('No Point');
     }
 }
 game('red',4);
+//console.log(snookerGame.ball1.color);
+//ARRAYS
+var apple = 3;
+var banana = 2;
+var cherry = 7;
+var cart = [apple,banana,cherry];
+console.log(cart);
+//+++LOOPS+++++ for(item in cart){console.log(cart[item])}
+for(item in cart){
+    console.log(cart[item]);
+}
+//Adding all elements of number array
+var total = 0;
+for(item in cart){
+    total += cart[item];
+    console.log(total)
+}
