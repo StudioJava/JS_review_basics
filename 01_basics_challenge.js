@@ -64,6 +64,7 @@ otherwise they're free to go.
  }
 speedCheck(120);
 //Logical Operator
+var payment;
 if (payment != "card") {
     console.log("Sell Beer")
   }
@@ -84,11 +85,19 @@ ball2:{
     number: 2
 }
 }
-function snookerGame(ballColor,ballNumber){
-    var counter = 0;
-if(ballColor != 'white' || ballNumber !== 7 ){
-console.log('One Point');
-}else{
-    console.log('No Point');
+// function snookerGame(ballColor,ballNumber){
+//     var counter = 0;
+// if(ballColor != 'white' && ballNumber !== 7 ){
+// return console.log('One Point');
+// }else{
+//     return console.log('No Point');
+// }
+// }
+function game(ballColor,number){
+    if(ballColor != 'white' || number != 7){
+        console.log('Point');
+    }else{
+        console.log('No Point');
+    }
 }
-}
+game('red',4);
