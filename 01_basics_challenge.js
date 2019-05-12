@@ -151,4 +151,21 @@ const name = 'Teddy';
 const city = 'Moncton';
 const color = 'Red';
 const birth = 'February';
+const number = 4;
 console.log(`Hello, I'm ${name} I come from ${city} my favourite color is ${color} born in ${birth}`);
+typeof number;
+/*
+1. Create a list of countries as an array
+1. Create a function that, given a country and a position, 
+will add that country either at the beginning or the end of the array
+1. Create another function that, given a position,
+ will either remove a country from the beginning 
+ or the end of the array
+---
+*/
+var countries = ['USA','Mexico','Canada','India','Peru','Thailand'];
+function addPlace(name){
+    countries.push(name);
+}
+addPlace('England');
+console.log(countries);
