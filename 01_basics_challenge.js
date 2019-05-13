@@ -176,3 +176,26 @@ function printScope(){
     console.log(x);
 }
 printScope();
+const fruit = {
+    name:'apple',
+    price: 3
+}
+fruit.shape = 'round';
+console.log(fruit.shape);
+delete fruit.price;
+console.log(fruit);
+
+//Functional Object Oriented Programming
+ carA = {
+    brand:'Mercedes',
+    status:'at rest',
+    start: function(){
+        this.status = 'running';
+    },
+    stop: function(){
+        this.status = 'at rest';
+    }
+}
+console.log(carA.status)
+carA.start();
+console.log(carA.status)
