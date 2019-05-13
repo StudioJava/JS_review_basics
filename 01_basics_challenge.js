@@ -169,3 +169,10 @@ function addPlace(name){
 }
 addPlace('England');
 console.log(countries);
+//Understanding local and global scope
+var x = 'outside';
+function printScope(){
+    var x = 'inside';
+    console.log(x);
+}
+printScope();
