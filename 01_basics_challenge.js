@@ -118,6 +118,7 @@ for(item in cart){
     total += cart[item];
     console.log(total)
 }
+console.log(total);
 
 /*
 Create a bowling game where an array of scores for a single player
@@ -199,3 +200,79 @@ console.log(fruit);
 console.log(carA.status)
 carA.start();
 console.log(carA.status)
+
+/*
+**Challenge**
+
+Create a market. In the market, 
+create 3 cash registers and 7 customers,
+ each customer has a shopping cart with any amount 
+ of products inside from 1 to 10, products are different 
+ from each other and a customer may have more than 1 of the same product.
+The 7 customers will go to the 3 cash registers 
+more or less in an equal split and each register 
+should calculate the total amount each customer should pay.
+As there is currently a promotion, any product 
+that costs more than 35 will get a 10% discount 
+and any shopping cart which total is more than 100 will get an additional 10% discount.
+Display the total of the carts with the `$` sign preceding the value.
+
+---
+*/
+// Create a Market Object
+const market = {
+products:{
+    bananas:3,
+    milk:6,
+    oranges:1,
+    apples:2,
+    soda:5,
+    berries:1,
+    coconut:7,
+    pasta:50,
+    chesse:12,
+    wine:21,
+    beer:15
+},
+cart: [],
+register: function(){
+let total = 0;
+for(item in this.cart ){
+    total += this.cart[item];
+    if(this.cart[item] >= 50 ){
+       /*
+       any product 
+       that costs more than 35 will get a 10% discount 
+       */ 
+        let itemDiscount = total * 10 / 100;
+        total = total - itemDiscount;
+    }
+    else if(total >= 100){
+        let overAllDiscount = total * 10 / 100;
+        total = total - overAllDiscount;
+    }
+    console.log(total);
+}
+}
+}
+// Create variables of Market products  to add into cart
+const bananas = market.products.bananas;
+const milk = market.products.milk;
+const oranges = market.products.oranges;
+const apples = market.products.apples;
+const soda = market.products.soda;
+const berries = market.products.berries;
+const coconut = market.products.coconut;
+const pasta = market.products.pasta;
+const chesse = market.products.chesse;
+const wine = market.products.wine;
+const beeer = market.products.beer;
+
+
+
+
+
+market.cart.push(pasta,beeer,pasta
+    )
+console.log(market.cart);
+market.register();
